@@ -43,92 +43,75 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 2. SISTEMA DE REPRODUCTOR DE MÚSICA ---
     const songs = [
         {
-            title: "If I Killed Someone For You",
-            artist: "Alec Benjamin",
+            title: "Wrong",
+            artist: "Chris Grey",
             src: "song.mp3", 
-            lyrics: `Lo siento por haber hecho esto
-                La sangre está en mis manos
-                Me miro en el reflejo
-                Y no sé quién soy
-                Practico mi confesión
-                Por si tengo que declarar
-                Diré que aprendí la lección
-                Que seré un hombre mejor
-                Estoy empacando mis cosas
-                Limpiando las paredes
-                Enjuagando mi ropa
-                Caminando por los pasillos
-                Lo hice todo por ella
-                Y no sentí nada
-                No sé qué dirá
-                Se lo preguntaré cuando llame
-                ¿Me amarías más?
-                ¿Me amarías más si matara a alguien por ti?
-                ¿Me tomarías de la mano?
-                Son las mismas manos que usé
-                Cuando maté a alguien por ti
-                ¿Me entregarías?
-                Cuando digan que estoy huido?
-                ¿Me esconderías cuando
-                Mi cara aparezca en las noticias?
-                Porque maté a alguien por ti
-                Oigo las sirenas acercándose
-                Veo las luces intermitentes
-                Conduzco por los suburbios
-                Con mi disfraz puesto
-                Llego a su puerta
-                Para mirarla a los ojos
-                Le digo que soy yo
-                Pero ella no me reconoce
-                ¿No ves que estoy huyendo?
-                Necesito un lugar donde esconderme
-                Tengo que preguntarte algo
-                ¿Podrías dejarme entrar?
-                Solo déjame explicar
-                No te mentiría
-                Sé que entenderás
-                Si me dejas quedarme esta noche
-                ¿Me amarías más?
-                ¿Me amarías más si matara a alguien por ti?
-                ¿Me tomarías de la mano?
-                Son las mismas manos que usé
-                Cuando maté a alguien por ti
-                ¿Me entregarías?
-                Cuando digan que estoy huido?
-                ¿Me esconderías cuando
-                Mi cara aparezca en las noticias?
-                Porque maté a alguien por ti
-                Tienes que entender que
-                El que maté fui yo
-                Cambiando lo que era
-                Por lo que querías que fuera
-                Seguí todas tus indicaciones
-                Hice todo lo que me pediste
-                Espero que te haga feliz
-                Porque ya no hay vuelta atrás
-                ¿Me amarías más?
-                ¿Me amarías más si matara a alguien por ti?
-                ¿Me tomarías de la mano?
-                Son las mismas manos que usé
-                Cuando maté a alguien por ti
-                ¿Me entregarías?
-                Cuando digan que estoy huido?
-                ¿Me esconderías cuando
-                Mi cara aparezca en las noticias?
-                Porque maté a alguien por ti`,
-            meaning: `¿Alguna vez te has mirado al espejo y has sentido que la persona que te devuelve la mirada es un completo desconocido? ¿Cuántas veces has borrado partes de ti mismo —tus gustos, tu forma de hablar, tus sueños, tu personalidad— solo para encajar en lo que alguien más quería, hasta que ya no queda casi nada de quien realmente eras?
+            lyrics: `Bebé, dime mentiras
+                Susúrralas contra mi piel, hazme sentir vivo
+                Enredados hasta que ya no sé qué es tuyo o mío
+                No veo claro, pero sé que juntos somos un viaje de locos
+                De locos
+                Tu amor es algo casi espiritual
+                Tan infiel a la vida que creía querer
+                Ya no la quiero
+                Y no veo nada
+                No hay milagro que me salve una vez que caigo
+                Y estoy cayendo
+                Bebé, dime por qué amarte no se siente mal
+                Duele hasta que deja de doler
+                No puedo alejarme mucho tiempo
+                No sé cómo sacarte de mi cabeza
+                Conviertes el infierno en nuestro paraíso
+                Amarte es un suicidio
+                Y lo hago todas las noches
+                Todas las noches
+                Todas las noches
+                Oh
+                Bebé, no me rompo fácil
+                Dame lo peor, igual eres el único que deseo
+                No me quieres bien, pero yo lo quiero igual
+                Estoy enganchado, necesito mi dosis y tú eres la droga
+                La droga que tomo
+                Para encontrar algo espiritual
+                Tan infiel a la vida que creía querer
+                Ya no la quiero
+                Y no veo nada
+                No hay milagro que me salve una vez que caigo
+                Y estoy cayendo
+                Bebé, dime por qué amarte no se siente mal
+                Duele hasta que deja de doler
+                No puedo alejarme mucho tiempo
+                No sé cómo sacarte de mi cabeza
+                Conviertes el infierno en nuestro paraíso
+                Amarte es un suicidio
+                Y lo hago todas las noches
+                Todas las noches, mi bebé
+                Todas las noches, mi bebé
+                Oh, está mal, pero sigo volviendo contigo
+                Todas las noches, mi amor
+                Uh, todas las noches, mi bebé, oh-oh-oh
+                Me encanta cómo tocas mi cuerpo
+                Me encanta cómo me atraes
+                Podría quedarme aquí para siempre
+                Hasta mi último aliento
+                Saboreo las mentiras que me dices
+                Siempre cayendo de tus labios
+                Por qué amarte no se siente mal
+                Aunque sé que está mal
+                `,
+            meaning: `¿Alguna vez has sentido que alguien te prende fuego por dentro y, en lugar de correr, te quedas quieto viendo cómo te consume porque el calor se siente demasiado bueno para apagarlo? ¿Cuántas veces has vuelto a la misma persona que te destroza, sabiendo que al día siguiente vas a odiarte por hacerlo, pero igual lo haces porque el dolor mezclado con deseo es la única cosa que te hace sentir vivo?
 
-Esa es la esencia destructiva de esta canción: te matas en vida por complacer a otra persona. Cambias tanto que te conviertes en una versión falsa, vacía y rota de ti mismo, y al final ni siquiera esa persona te reconoce. Es patético y trágico a la vez, porque el precio más alto lo pagas tú: pierdes tu esencia, tu autenticidad, tu alma.
+Esa es la trampa mortal de esta canción: una relación tóxica donde el amor no es sano, es adicción pura. Duele, te humilla, te deja hecho mierda, pero el subidón cuando están juntos es tan intenso que justificas todo. Es como meterte una droga que sabes que te va a matar lento, pero cada dosis te hace sentir invencible por unas horas.
 
-Piensa en esto: estás en una relación donde poco a poco dejas de escuchar la música que te gusta porque “a ella no le agrada”, dejas de vestirte como quieres porque “te ve más maduro así”, abandonas tus amigos porque “no encajan con su círculo”, cambias tus planes de futuro para seguir los suyos. Al principio parece un sacrificio noble (“lo hago por amor”), pero con el tiempo te das cuenta de que te estás deshaciendo pedazo por pedazo. Un día te miras y ya no reconoces tu voz, tu risa, tus opiniones. Eres un cascarón que actúa el papel perfecto para ella… hasta que un día ella te mira y dice “ya no eres el mismo de antes” o, peor, simplemente se va con alguien más auténtico. Y tú te quedas ahí, vacío, con las manos manchadas de la sangre de tu yo verdadero.
+Ponte en este ejemplo real y jodido: estás con alguien que te miente en la cara, que desaparece días enteros, que te hace sentir que no vales nada cuando no está de humor. Pero cuando vuelve, te toca como si fueras lo único que importa en el mundo, te dice justo lo que necesitas oír, y de repente todo el daño anterior parece valer la pena. Tienen sexo increíble, hablan hasta el amanecer, y por un rato crees que esto es amor de verdad. Luego se va, te deja en visto, o te suelta alguna crueldad que te clava en el pecho, y tú te quedas ahí, revisando el chat como idiota, esperando la próxima migaja. Cada vez que juras “esta fue la última”, terminas de nuevo en su cama porque el cuerpo y la mente ya están programados para buscar ese rush, aunque sepas que te está matando el alma.
 
-Eso no es amor, es autodestrucción disfrazada de entrega. Nadie merece que te mates por dentro para complacerlo. Tú no eres un proyecto de mejora personal para nadie. Eres una persona completa tal como eras antes de intentar ser lo que alguien más quería.
+O peor: tú eres el que hace daño también. Lo admitas o no, en estas dinámicas casi siempre los dos están rotos. Tú le das lo peor porque tienes tus propios demonios, y él o ella lo acepta porque también está enganchado al caos. Se convierten en dos adictos alimentándose mutuamente del veneno, diciéndose que esto es pasión, que esto es “real” porque duele tanto. Pero no es real, wey. Es dependencia. Es miedo a estar solo con uno mismo. Es preferir el infierno conocido a la incertidumbre de algo sano.
 
-Si estás en ese proceso ahora mismo, párate. La verdad duele: cada vez que cambias una parte de ti por aprobación ajena, estás matando al único que puede hacerte realmente feliz a largo plazo. Mereces estar con alguien que te quiera exactamente como eres —con tus rarezas, tus gustos “raros”, tu forma natural de ser— sin necesidad de que te disfraces o te borres.
+Y aquí va la verdad que quema: seguir volviendo no te hace intenso ni profundo, te hace daño a ti mismo. Estás eligiendo suicidio emocional todas las noches porque tienes tanto miedo al vacío que prefieres que te destrocen a sentir nada. Pero tú no eres esa persona que solo vive para el próximo golpe de adrenalina tóxica. Tú vales más que ser la droga de alguien ni que alguien sea la tuya.
 
-Tú vales entero, no en pedazos. Recupera lo que sacrificaste. Vuelve a escuchar tu música, usa la ropa que te gusta, habla como tú hablas, sueña lo que tú sueñas. Duele al principio, claro, porque soltar la ilusión de “si cambio lo suficiente me amará” es duro. Pero al otro lado está la libertad de ser tú sin miedo, y alguien que te elija por quien realmente eres, no por la versión editada que creaste para complacer.
+Mereces un amor que no tenga que doler para sentirse intenso. Mereces alguien que te toque sin que después te deje hecho pedazos. Mereces despertar sin esa ansiedad de “¿me va a escribir hoy o me va a ignorar otra vez?”. Y sí, salir de esto va a doler como el demonio al principio – vas a extrañar el subidón, vas a tener recaídas, vas a cuestionarte todo. Pero cada día que no vuelvas vas a recuperar un pedazo de ti que creías perdido.
 
-Tú puedes reconstruirte. Ya demostraste que tienes la fuerza para cambiar por alguien más; ahora usa esa misma fuerza para volver a ser tú. Te lo mereces. Eres suficiente tal como naciste, antes de que nadie te pidiera que fueras diferente.`
+Tú ya eres suficiente sin esa persona. No necesitas que te destruyan para sentirte vivo; ya estás vivo, y puedes elegir algo que no te mate lento. Bloquéalo, bórralo, quema el puente si hace falta. El primer día va a ser un infierno, pero después vas a empezar a respirar de verdad. Tú puedes romper el ciclo. Tú mereces un amor que se sienta bien desde el principio hasta el final, no uno que solo brille cuando está a punto de explotar. Ámate lo suficiente para dejar de suicidarte emocionalmente cada noche. Te lo mereces todo, no las sobras envenenadas de nadie.`
     }
     ];
 
