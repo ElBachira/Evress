@@ -5,20 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const sfxClick = document.getElementById('sfx-click');
     const sfxOpen = document.getElementById('sfx-open');
 
-    // Función auxiliar no bloqueante
     const playSound = (audioEl) => {
         if(audioEl) {
             audioEl.currentTime = 0;
             audioEl.volume = 0.3; 
-            // Promesa sin espera para no bloquear UI
             audioEl.play().catch(() => {}); 
         }
     };
 
-    // Usar 'passive: true' mejora rendimiento de scroll en móviles si se usara ahí
-    // Delegación de eventos para mejor performance
+    // Delegación corregida para no interferir con los enlaces <a>
     document.body.addEventListener('click', (e) => {
-        if (e.target.closest('.ui-trigger')) {
+        const trigger = e.target.closest('.ui-trigger');
+        if (trigger) {
             playSound(sfxClick);
         }
     });
@@ -37,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loader.style.display = 'none';
                 playSound(sfxOpen);
             }, 800);
-        }, 1500); // Reducido un poco para sensación de rapidez
+        }, 1500);
     }
 
     // --- 2. SISTEMA DE REPRODUCTOR DE MÚSICA ---
@@ -112,7 +110,7 @@ Y aquí va la verdad que quema: seguir volviendo no te hace intenso ni profundo,
 Mereces un amor que no tenga que doler para sentirse intenso. Mereces alguien que te toque sin que después te deje hecho pedazos. Mereces despertar sin esa ansiedad de “¿me va a escribir hoy o me va a ignorar otra vez?”. Y sí, salir de esto va a doler como el demonio al principio – vas a extrañar el subidón, vas a tener recaídas, vas a cuestionarte todo. Pero cada día que no vuelvas vas a recuperar un pedazo de ti que creías perdido.
 
 Tú ya eres suficiente sin esa persona. No necesitas que te destruyan para sentirte vivo; ya estás vivo, y puedes elegir algo que no te mate lento. Bloquéalo, bórralo, quema el puente si hace falta. El primer día va a ser un infierno, pero después vas a empezar a respirar de verdad. Tú puedes romper el ciclo. Tú mereces un amor que se sienta bien desde el principio hasta el final, no uno que solo brille cuando está a punto de explotar. Ámate lo suficiente para dejar de suicidarte emocionalmente cada noche. Te lo mereces todo, no las sobras envenenadas de nadie.`
-    }
+        }
     ];
 
     let currentIdx = 0;
@@ -166,8 +164,8 @@ Tú ya eres suficiente sin esa persona. No necesitas que te destruyan para senti
                 if (!bot.nombre.includes(myName)) {
                     const item = document.createElement('a');
                     item.href = bot.url || '#';
+                    item.target = "_blank"; // Asegura que abra en nueva pestaña
                     item.className = 'bot-item ui-trigger'; 
-                    // Animación optimizada
                     item.style.animation = `fadeIn 0.5s ease forwards`; 
                     
                     item.innerHTML = `
@@ -196,14 +194,12 @@ Tú ya eres suficiente sin esa persona. No necesitas que te destruyan para senti
             honkAudio.volume = 0.5;
             honkAudio.play().catch(() => {});
             
-            // Usamos clases CSS si fuera posible, pero mantener JS simple está bien
             sticker.style.transform = "scale(0.8) rotate(-20deg)";
             setTimeout(() => sticker.style.transform = "", 150);
         });
     }
 
     // --- 5. UTILIDADES UI (Tabs & Acordeones) ---
-    // Funciones globales para onlick en HTML
     window.openOverlay = (id) => {
         playSound(sfxOpen);
         const el = document.getElementById(id);
@@ -220,11 +216,9 @@ Tú ya eres suficiente sin esa persona. No necesitas que te destruyan para senti
         playSound(sfxClick);
         const el = document.getElementById(id);
         if (el) {
-            // Cierra otros con suavidad
             document.querySelectorAll('.foldable').forEach(f => {
                 if(f.id !== id) f.classList.remove('active');
             });
-            // Usa requestAnimationFrame para asegurar que el navegador esté listo para pintar
             requestAnimationFrame(() => {
                 el.classList.toggle('active');
             });
